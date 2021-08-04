@@ -18,7 +18,6 @@ namespace mcexInstaller
             InitializeComponent();
             textBox1.Text = mcexpath;
             download1 = new WebClient();
-            //download1.DownloadProgressChanged += new DownloadProgressChangedEventHandler(cargando2);
             download1.DownloadFileCompleted += new AsyncCompletedEventHandler(cargado2);
         }
 

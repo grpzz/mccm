@@ -1,0 +1,7 @@
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug\minecraftExplorer.csproj.AssemblyReference.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug\mcex.ini.resources
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug\mcex.Properties.Resources.resources
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug\minecraftExplorer.csproj.GenerateResource.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug\minecraftExplorer.csproj.CoreCompileInputs.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\bin\Debug\mcex.exe
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug\mcex.exe

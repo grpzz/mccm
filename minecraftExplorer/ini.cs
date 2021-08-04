@@ -61,9 +61,6 @@ namespace mcex
                 case "Shader":
                     type = @"\shaderpacks\";
                     break;
-                case "Plugin":
-                    type = @"\plugins\";
-                    break;
                 default:
                     break;
             }
@@ -115,16 +112,6 @@ namespace mcex
             mcexclass.itemsFile();
             MessageBox.Show("Completed");
             Application.Exit();
-        }
-
-        private void ini_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

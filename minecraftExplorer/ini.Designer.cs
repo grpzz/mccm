@@ -87,7 +87,6 @@ namespace mcex
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(436, 286);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button7
             // 
@@ -284,7 +283,6 @@ namespace mcex
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".mc explorer";
-            this.Load += new System.EventHandler(this.ini_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

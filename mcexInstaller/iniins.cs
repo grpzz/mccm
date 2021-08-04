@@ -10,7 +10,6 @@ namespace mcexInstaller
     public partial class iniins : Form
     {
         private WebClient download1;
-
         string mcexpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".mcex\");
 
         public iniins()
@@ -58,7 +57,7 @@ namespace mcexInstaller
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Information;
                 DialogResult result;
-                string message = "Error creating key in HKEY_CLASSES_ROOT,\n" +
+                string message = "Error creating key in" + userRoot + "\n" +
                                  "Report error in --> https://github.com/grpzz/.mcex/discussions \n" +
                                  "Exception" + e;
                 string caption = "";

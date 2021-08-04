@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mcex", "minecraftExplorer\mcex.csproj", "{7667113A-74BC-48E4-9669-D069A1AD3FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mcexInstaller", "mcexInstaller\mcexInstaller.csproj", "{C12E309B-F98A-42E3-AAE8-96CC0D4A2593}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7667113A-74BC-48E4-9669-D069A1AD3FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7667113A-74BC-48E4-9669-D069A1AD3FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7667113A-74BC-48E4-9669-D069A1AD3FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7667113A-74BC-48E4-9669-D069A1AD3FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12E309B-F98A-42E3-AAE8-96CC0D4A2593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12E309B-F98A-42E3-AAE8-96CC0D4A2593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12E309B-F98A-42E3-AAE8-96CC0D4A2593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12E309B-F98A-42E3-AAE8-96CC0D4A2593}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06C9B3F0-87E3-4E24-AC61-1F71CA7CD4AB}
+	EndGlobalSection
+EndGlobal

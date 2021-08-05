@@ -356,3 +356,7 @@ FodyWeavers.xsd
 #/mcexInstaller/bin/Debug/
 #/mcexInstaller/bin/Release/mcexInstaller.exe.config
 #/mcexInstaller/bin/mcexInstaller.exe.config
+/mcexInstaller/bin/mcexInstaller.exe.config
+/mcexInstaller/obj/Release/mcexInstaller.Properties.Resources.resources
+/mcexInstaller/obj/Release/mcexInstaller.iniins.resources
+/mcexInstaller/obj/Release

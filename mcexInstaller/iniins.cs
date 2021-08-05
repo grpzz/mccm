@@ -71,7 +71,7 @@ namespace mcexInstaller
 
         private void Download()
         {
-            string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcex/bin/Release/mcex.exe";
+            string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcex/bin/mcex.exe";
             string path = mcexpath + "mcex.exe";
             download1.DownloadFileAsync(new Uri(url), path);
         }

@@ -58,7 +58,6 @@ namespace mcexInstaller
                 MessageBoxIcon icon = MessageBoxIcon.Information;
                 DialogResult result;
                 string message = "Error creating key in" + userRoot + "\n" +
-                                 "Report error in --> https://github.com/grpzz/.mcex/discussions \n" +
                                  "Exception" + e;
                 string caption = "";
 
@@ -72,7 +71,7 @@ namespace mcexInstaller
 
         private void Download()
         {
-            string url = "https://raw.githubusercontent.com/grpzz/.mcex/main/bin/Release/mcex.exe";
+            string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcex/bin/Release/mcex.exe";
             string path = mcexpath + "mcex.exe";
             download1.DownloadFileAsync(new Uri(url), path);
         }

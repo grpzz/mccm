@@ -345,14 +345,14 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-/mcex/obj/
-/mcex/bin/Release/
-/mcex/bin/Debug/
-/mcex/bin/Release/mcexInstaller.exe.config
-/mcex/bin/mcexInstaller.exe.config
+#/mcex/obj/
+#/mcex/bin/Release/
+#/mcex/bin/Debug/
+#/mcex/bin/Release/mcexInstaller.exe.config
+#/mcex/bin/mcexInstaller.exe.config
 
-/mcexInstaller/obj/
-/mcexInstaller/bin/Release/
-/mcexInstaller/bin/Debug/
-/mcexInstaller/bin/Release/mcexInstaller.exe.config
-/mcexInstaller/bin/mcexInstaller.exe.config
+#/mcexInstaller/obj/
+#/mcexInstaller/bin/Release/
+#/mcexInstaller/bin/Debug/
+#/mcexInstaller/bin/Release/mcexInstaller.exe.config
+#/mcexInstaller/bin/mcexInstaller.exe.config

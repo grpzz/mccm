@@ -6,5 +6,5 @@ C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.Prope
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.csproj.GenerateResource.cache
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.csproj.CoreCompileInputs.cache
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.exe
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\bin\version.txt
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\bin\mcex.exe
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.options.resources

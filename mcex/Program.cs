@@ -22,6 +22,9 @@ namespace minecraftExplorer
                     case "additem":
                         additem();
                         break;
+                    case "install":
+                        install();
+                        break;
                     default:
                         Application.Exit();
                         break;
@@ -38,6 +41,18 @@ namespace minecraftExplorer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new options());
+        }
+
+        private static void install()
+        {
+            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+            string sversion = fvi.FileVersion;
+
+            File.Create("version");
+            StreamWriter WriteReportFile = File.AppendText("version");
+            WriteReportFile.WriteLine(sversion);
+            WriteReportFile.Close();
         }
 
         private static void additem()

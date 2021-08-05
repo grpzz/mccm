@@ -4,6 +4,7 @@ using System.IO;
 using System.Net;
 using System.ComponentModel;
 using Microsoft.Win32;
+using System.Diagnostics;
 
 namespace mcexInstaller
 {
@@ -78,17 +79,36 @@ namespace mcexInstaller
 
         private void cargado2(object sender, AsyncCompletedEventArgs e)
         {
-            MessageBoxButtons buttons = MessageBoxButtons.OK;
-            MessageBoxIcon icon = MessageBoxIcon.Information;
-            DialogResult result;
-            string message = "Installation finished.\n" +
-                             "If you find a bug, report it at-- > https://github.com/grpzz/.mcex/discussions";
-            string caption = "";
-
-            result = MessageBox.Show(message, caption, buttons, icon);
-            if (result == System.Windows.Forms.DialogResult.OK)
+            try
             {
-                Application.Exit();
+                Process.Start(mcexpath + @"mcex.exe install");
+
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Information;
+                DialogResult result;
+                string message = "Installation finished.\n" +
+                                 "If you find a bug, report it at-- > https://github.com/grpzz/.mcex/discussions";
+                string caption = "";
+                result = MessageBox.Show(message, caption, buttons, icon);
+                if (result == System.Windows.Forms.DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+            catch 
+            {
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Error;
+                DialogResult result;
+                string message = "Installation error.\n" +
+                                 "Report it at-- > https://github.com/grpzz/.mcex/discussions";
+                string caption = "";
+
+                result = MessageBox.Show(message, caption, buttons, icon);
+                if (result == System.Windows.Forms.DialogResult.OK)
+                {
+                    Application.Exit();
+                }
             }
         }
 

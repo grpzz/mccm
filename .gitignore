@@ -348,3 +348,4 @@ FodyWeavers.xsd
 /mcexInstaller/bin/Release/
 /mcexInstaller/bin/Debug/
 /mcexInstaller/bin/Release/mcexInstaller.exe.config
+/mcexInstaller/bin/mcexInstaller.exe.config

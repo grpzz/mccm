@@ -50,7 +50,7 @@ namespace mcexInstaller
             try
             {
                 Registry.SetValue(keyName0, "", "Add to Minecraft");
-                Registry.SetValue(keyName1, "", "\"" + mcexpath + "mcex.exe\"  \"%1\"");
+                Registry.SetValue(keyName1, "", "\"" + mcexpath + "mcex.exe\" \"additem\" \"%1\"");
             }
             catch (Exception e)
             {

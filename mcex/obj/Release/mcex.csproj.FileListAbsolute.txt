@@ -1,0 +1,8 @@
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\Resources\Release\version.txt
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\Resources\Release\mcex.exe
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.csproj.AssemblyReference.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.ini.resources
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.Properties.Resources.resources
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.csproj.GenerateResource.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.csproj.CoreCompileInputs.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.exe

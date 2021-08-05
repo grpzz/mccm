@@ -1,5 +1,5 @@
 # minecraftExplorer
-Minecraft Explorer (Codename .mcex) makes it easy to add files like mods, texture pack and shader pack without going into the .minecraft folder
+Minecraft Explorer (Codename .mcex) makes it easy to add files like, mods, texture pack and shader pack, without going into the .minecraft folder
 
 ### [Download installer](https://raw.githubusercontent.com/grpzz/.mcex/master/mcexInstaller/bin/Release/mcexInstaller.exe)
 

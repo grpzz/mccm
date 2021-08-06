@@ -26,7 +26,7 @@ namespace minecraftExplorer
                         install();
                         break;
                     default:
-                        Application.Exit();
+                        options();
                         break;
                 }
             }

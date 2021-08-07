@@ -81,7 +81,7 @@ namespace mcexInstaller
         {
             try
             {
-                Process.Start("\"" + mcexpath + "mcex.exe\" \"install\" \"%1\"");
+               //Process.Start("\"" + mcexpath + "mcex.exe\" \"install\" \"%1\"");
 
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Information;

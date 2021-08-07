@@ -26,7 +26,7 @@ namespace mcex
             download2.DownloadFileCompleted += new AsyncCompletedEventHandler(cargado2);
         }
 
-        private void Update()
+        private new void Update()
         {
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
@@ -42,7 +42,7 @@ namespace mcex
             StreamReader file = new StreamReader($"{mcexpath}lastversion");
             FileInfo fi = new FileInfo(lastversion);
 
-            if(lastversion == actuallyversion)
+            if (lastversion == actuallyversion)
             {
                 MessageBox.Show("You have the latest version");
             }

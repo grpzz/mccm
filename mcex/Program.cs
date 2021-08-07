@@ -18,9 +18,6 @@ namespace minecraftExplorer
                     case "additem":
                         additem();
                         break;
-                    /*case "install":
-                        install();*/
-                        break;
                     default:
                         break;
                 }

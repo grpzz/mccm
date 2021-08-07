@@ -56,13 +56,13 @@ namespace mcex
         private void download()
         {
             string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcexInstaller/bin/mcexInstaller.exe";
-            string path = $"{mcexpath}mcex.exe";
-            download1.DownloadFileAsync(new Uri(url), path);
+            string path = $"{mcexpath}mcexInstaller.exe";
+            download2.DownloadFileAsync(new Uri(url), path);
         }
 
         private void cargado2(object sender, AsyncCompletedEventArgs e)
         {
-            Process.Start("\"" + mcexpath + "mcex.exe\" \"install\" \"%1\"");
+            Process.Start($"{mcexpath}mcexInstaller.exe");
             Application.Exit();
         }
 

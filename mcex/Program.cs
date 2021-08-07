@@ -18,8 +18,8 @@ namespace minecraftExplorer
                     case "additem":
                         additem();
                         break;
-                    case "install":
-                        install();
+                    /*case "install":
+                        install();*/
                         break;
                     default:
                         break;
@@ -39,7 +39,7 @@ namespace minecraftExplorer
             Application.Run(new options());
         }
 
-        private static void install()
+        /*private static void install()
         {
             string programpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".mcex\");
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
@@ -50,7 +50,7 @@ namespace minecraftExplorer
             StreamWriter WriteReportFile = File.AppendText($"{programpath}version");
             WriteReportFile.WriteLine(sversion);
             WriteReportFile.Close();
-        }
+        }*/
 
         private static void additem()
         {

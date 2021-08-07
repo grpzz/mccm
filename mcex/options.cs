@@ -14,6 +14,7 @@ namespace mcex
 
         string actuallyversion;
         string lastversion = "";
+        string mcexpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".mcex\");
 
         public options()
         {
@@ -29,13 +30,13 @@ namespace mcex
             actuallyversion = fvi.FileVersion;
 
             string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcex/version";
-            string path = "lastversion";
+            string path = $"{mcexpath}lastversion";
             download1.DownloadFileAsync(new Uri(url), path);
         }
 
         private void cargado1(object sender, AsyncCompletedEventArgs e)
         {
-            StreamReader file = new System.IO.StreamReader("lastversion");
+            StreamReader file = new System.IO.StreamReader($"{mcexpath}lastversion");
             FileInfo fi = new FileInfo(lastversion);
 
             if(lastversion == actuallyversion)
@@ -52,25 +53,20 @@ namespace mcex
         private void download()
         {
             string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcexInstaller/bin/mcexInstaller.exe";
-            string path = "mcexInstaller.exe";
+            string path = $"{mcexpath}mcex.exe";
             download1.DownloadFileAsync(new Uri(url), path);
         }
 
         private void cargado2(object sender, AsyncCompletedEventArgs e)
         {
-            Process.Start("mcexInstaller.exe");
+            Process.Start($"{mcexpath}mcex.exe install");
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             Update();
             button1.Enabled = false;
-        }
-
-        private void options_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

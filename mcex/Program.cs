@@ -7,10 +7,6 @@ namespace minecraftExplorer
 {
     static class Program
     {
-
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -45,12 +41,13 @@ namespace minecraftExplorer
 
         private static void install()
         {
+            string programpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".mcex\");
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
             System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
             string sversion = fvi.FileVersion;
 
-            File.Create("version");
-            StreamWriter WriteReportFile = File.AppendText("version");
+            File.Create($"{programpath}version");
+            StreamWriter WriteReportFile = File.AppendText($"{programpath}version");
             WriteReportFile.WriteLine(sversion);
             WriteReportFile.Close();
         }

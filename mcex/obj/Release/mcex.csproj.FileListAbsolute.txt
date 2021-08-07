@@ -8,4 +8,3 @@ C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.cspro
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.exe
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\bin\mcex.exe
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Release\mcex.options.resources
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\bin\version

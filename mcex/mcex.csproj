@@ -80,9 +80,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="version">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="version" />
     <EmbeddedResource Include="ini.resx">
       <DependentUpon>ini.cs</DependentUpon>
     </EmbeddedResource>

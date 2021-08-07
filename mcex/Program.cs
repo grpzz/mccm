@@ -22,13 +22,13 @@ namespace minecraftExplorer
                         install();
                         break;
                     default:
-                        options();
                         break;
                 }
             }
-            catch
+            catch(Exception e)
             {
                 options();
+                Console.WriteLine(e);
             }
         }
 

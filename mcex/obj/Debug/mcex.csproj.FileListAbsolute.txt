@@ -6,3 +6,11 @@ C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug\mcex.csproj.CoreCompileInputs.cache
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\obj\Debug\mcex.exe
 C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\minecraftExplorer\bin\Debug\version.txt
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\bin\Debug\mcex.exe
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Debug\mcex.csproj.AssemblyReference.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Debug\mcex.ini.resources
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Debug\mcex.options.resources
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Debug\mcex.Properties.Resources.resources
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Debug\mcex.csproj.GenerateResource.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Debug\mcex.csproj.CoreCompileInputs.cache
+C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcex\obj\Debug\mcex.exe

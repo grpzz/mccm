@@ -19,6 +19,9 @@ namespace mcex
         public options()
         {
             InitializeComponent();
+
+            download1 = new WebClient();
+            download2 = new WebClient();
             download1.DownloadFileCompleted += new AsyncCompletedEventHandler(cargado1);
             download2.DownloadFileCompleted += new AsyncCompletedEventHandler(cargado2);
         }
@@ -26,7 +29,7 @@ namespace mcex
         private void Update()
         {
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-            System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
             actuallyversion = fvi.FileVersion;
 
             string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcex/version";
@@ -36,7 +39,7 @@ namespace mcex
 
         private void cargado1(object sender, AsyncCompletedEventArgs e)
         {
-            StreamReader file = new System.IO.StreamReader($"{mcexpath}lastversion");
+            StreamReader file = new StreamReader($"{mcexpath}lastversion");
             FileInfo fi = new FileInfo(lastversion);
 
             if(lastversion == actuallyversion)

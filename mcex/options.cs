@@ -59,7 +59,7 @@ namespace mcex
 
         private void cargado2(object sender, AsyncCompletedEventArgs e)
         {
-            Process.Start($"{mcexpath}mcex.exe install");
+            Process.Start("\"" + mcexpath + "mcex.exe\" \"install\" \"%1\"");
             Application.Exit();
         }
 

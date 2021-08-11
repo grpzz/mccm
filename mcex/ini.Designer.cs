@@ -29,7 +29,7 @@ namespace mcex
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "eded",
             "eded"}, -1);
             this.listView1 = new System.Windows.Forms.ListView();
@@ -50,6 +50,7 @@ namespace mcex
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +59,7 @@ namespace mcex
             // 
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.listView1.Location = new System.Drawing.Point(35, 253);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(150, 120);
@@ -69,6 +70,7 @@ namespace mcex
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -269,6 +271,15 @@ namespace mcex
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 16);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(87, 256);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(70, 23);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "b6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // ini
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(119F, 119F);
@@ -311,6 +322,7 @@ namespace mcex
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Button button6;
     }
 }
 

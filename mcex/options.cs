@@ -32,6 +32,8 @@ namespace mcex
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
             actuallyversion = fvi.FileVersion;
 
+            label2.Text = actuallyversion;
+
             string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcex/version";
             string path = $"{mcexpath}lastversion";
             download1.DownloadFileAsync(new Uri(url), path);
@@ -39,8 +41,15 @@ namespace mcex
 
         private void cargado1(object sender, AsyncCompletedEventArgs e)
         {
-            StreamReader file = new StreamReader($"{mcexpath}lastversion");
-            FileInfo fi = new FileInfo(lastversion);
+            Stream stream = File.OpenRead($"{mcexpath}lastversion");
+            StreamReader streamReader = new StreamReader(stream);
+            string str = streamReader.ReadToEnd();
+
+            lastversion = str;
+            streamReader.Close();
+            stream.Close();
+
+            label3.Text = lastversion;
 
             if (lastversion == actuallyversion)
             {

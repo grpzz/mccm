@@ -51,7 +51,7 @@ namespace mcex
             lastversion = str;
             streamReader.Close();
             stream.Close();
-            Directory.Delete($"{mcexpath}lastversion");
+            //Directory.Delete($"{mcexpath}lastversion");
 
             label3.Text = lastversion;
         }
@@ -65,7 +65,7 @@ namespace mcex
 
         private void Completed2(object sender, AsyncCompletedEventArgs e)
         {
-            if (Directory.Exists($"{mcexpath}mcexInstaller.exe"))
+            if (File.Exists($"{mcexpath}mcexInstaller.exe"))
             {
                 try
                 {

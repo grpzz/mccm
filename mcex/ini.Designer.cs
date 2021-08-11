@@ -29,7 +29,7 @@ namespace mcex
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "eded",
             "eded"}, -1);
             this.listView1 = new System.Windows.Forms.ListView();
@@ -58,7 +58,7 @@ namespace mcex
             // 
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem1});
             this.listView1.Location = new System.Drawing.Point(35, 253);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(150, 120);
@@ -123,6 +123,7 @@ namespace mcex
             // 
             // listView2
             // 
+            this.listView2.Enabled = false;
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(195, 91);
             this.listView2.Name = "listView2";

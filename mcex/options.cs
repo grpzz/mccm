@@ -19,27 +19,30 @@ namespace mcex
         public options()
         {
             InitializeComponent();
+            Version();
 
             download1 = new WebClient();
             download2 = new WebClient();
-            download1.DownloadFileCompleted += new AsyncCompletedEventHandler(cargado1);
-            download2.DownloadFileCompleted += new AsyncCompletedEventHandler(cargado2);
+            download1.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed1);
+            download2.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed2);
         }
 
-        private new void Update()
+        private void Version()
         {
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
             actuallyversion = fvi.FileVersion;
-
             label2.Text = actuallyversion;
+        }
 
+        private void SearchVersion()
+        {
             string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcex/version";
             string path = $"{mcexpath}lastversion";
             download1.DownloadFileAsync(new Uri(url), path);
         }
 
-        private void cargado1(object sender, AsyncCompletedEventArgs e)
+        private void Completed1(object sender, AsyncCompletedEventArgs e)
         {
             Stream stream = File.OpenRead($"{mcexpath}lastversion");
             StreamReader streamReader = new StreamReader(stream);
@@ -48,18 +51,9 @@ namespace mcex
             lastversion = str;
             streamReader.Close();
             stream.Close();
+            Directory.Delete($"{mcexpath}lastversion");
 
             label3.Text = lastversion;
-
-            if (label2.Text == label3.Text)
-            {
-                MessageBox.Show("You have the latest version");
-            }
-            else
-            {
-                MessageBox.Show("You don't have the latest version :(, it will download now :D");
-                download();
-            }
         }
 
         private void download()
@@ -69,16 +63,40 @@ namespace mcex
             download2.DownloadFileAsync(new Uri(url), path);
         }
 
-        private void cargado2(object sender, AsyncCompletedEventArgs e)
+        private void Completed2(object sender, AsyncCompletedEventArgs e)
         {
-            Process.Start($"{mcexpath}mcexInstaller.exe");
-            Application.Exit();
+            if (Directory.Exists($"{mcexpath}mcexInstaller.exe"))
+            {
+                try
+                {
+                    Process.Start($"{mcexpath}mcexInstaller.exe");
+                    Application.Exit();
+                }
+                catch (Win32Exception)
+                {
+                    MessageBox.Show("Application start error");
+                }
+                catch
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+            else
+            {
+                MessageBox.Show("File not Found");
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Update();
+            download();
             button1.Enabled = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SearchVersion();
+            button2.Enabled = false;
         }
     }
 }

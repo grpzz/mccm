@@ -51,7 +51,7 @@ namespace mcex
 
             label3.Text = lastversion;
 
-            if (lastversion == actuallyversion)
+            if (actuallyversion == lastversion)
             {
                 MessageBox.Show("You have the latest version");
             }

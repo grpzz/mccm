@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>minecraftExplorer.Program</StartupObject>
+    <StartupObject>minecraftcontextmenu.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -71,7 +71,7 @@
     <Compile Include="ini.Designer.cs">
       <DependentUpon>ini.cs</DependentUpon>
     </Compile>
-    <Compile Include="mcexclass.cs" />
+    <Compile Include="mccmclass.cs" />
     <Compile Include="options.cs">
       <SubType>Form</SubType>
     </Compile>

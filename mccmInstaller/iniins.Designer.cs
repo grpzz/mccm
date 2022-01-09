@@ -1,5 +1,5 @@
 ﻿
-namespace mcexInstaller
+namespace mccmInstaller
 {
     partial class iniins
     {
@@ -165,7 +165,7 @@ namespace mcexInstaller
             this.Name = "iniins";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = ".mcex Installer";
+            this.Text = ".mccm Installer";
             this.ResumeLayout(false);
             this.PerformLayout();
 

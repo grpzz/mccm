@@ -5,7 +5,7 @@ using System.IO;
 using System.Net;
 using System.Windows.Forms;
 
-namespace mcex
+namespace mccm
 {
     public partial class options : Form
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace mcexInstaller
+namespace mccmInstaller
 {
     static class Program
     {

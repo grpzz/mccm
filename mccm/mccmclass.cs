@@ -2,9 +2,9 @@
 using System.IO;
 using System.Windows.Forms;
 
-namespace mcex
+namespace mccm
 {
-    class mcexclass
+    class mccmclass
     {
         public static void itemsFile()
         {

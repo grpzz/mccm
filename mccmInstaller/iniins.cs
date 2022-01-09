@@ -4,19 +4,18 @@ using System.IO;
 using System.Net;
 using System.ComponentModel;
 using Microsoft.Win32;
-using System.Diagnostics;
 
-namespace mcexInstaller
+namespace mccmInstaller
 {
     public partial class iniins : Form
     {
         private WebClient download1;
-        string mcexpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".mcex\");
+        string mccmpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".mccm\");
 
         public iniins()
         {
             InitializeComponent();
-            textBox1.Text = mcexpath;
+            textBox1.Text = mccmpath;
             download1 = new WebClient();
             download1.DownloadFileCompleted += new AsyncCompletedEventHandler(cargado2);
         }
@@ -31,9 +30,9 @@ namespace mcexInstaller
             button2.Enabled = false;
             button3.Enabled = false;
 
-            if (!Directory.Exists(mcexpath))
+            if (!Directory.Exists(mccmpath))
             {
-                Directory.CreateDirectory(mcexpath);
+                Directory.CreateDirectory(mccmpath);
             }
             registerkey();
             Download();
@@ -43,15 +42,15 @@ namespace mcexInstaller
         {
             const string userRoot = "HKEY_CLASSES_ROOT";
 
-            const string subkey0 = "*\\shell\\mcex";
-            const string subkey1 = "*\\shell\\mcex\\command";
+            const string subkey0 = "*\\shell\\mccm";
+            const string subkey1 = "*\\shell\\mccm\\command";
             const string keyName0 = userRoot + "\\" + subkey0;
             const string keyName1 = userRoot + "\\" + subkey1;
 
             try
             {
                 Registry.SetValue(keyName0, "", "Add to Minecraft");
-                Registry.SetValue(keyName1, "", "\"" + mcexpath + "mcex.exe\" \"additem\" \"%1\"");
+                Registry.SetValue(keyName1, "", "\"" + mccmpath + "mccm.exe\" \"additem\" \"%1\"");
             }
             catch (Exception e)
             {
@@ -73,7 +72,7 @@ namespace mcexInstaller
         private void Download()
         {
             string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccm/bin/mccm.exe";
-            string path = mcexpath + "mcex.exe";
+            string path = mccmpath + "mccm.exe";
             download1.DownloadFileAsync(new Uri(url), path);
         }
 
@@ -87,7 +86,7 @@ namespace mcexInstaller
                 MessageBoxIcon icon = MessageBoxIcon.Information;
                 DialogResult result;
                 string message = "Installation finished.\n" +
-                                 "If you find a bug, report it at-- > https://github.com/grpzz/.mcex/discussions";
+                                 "If you find a bug, report it at-- > https://github.com/grpzz/mccm/discussions";
                 string caption = "";
                 result = MessageBox.Show(message, caption, buttons, icon);
                 if (result == System.Windows.Forms.DialogResult.OK)
@@ -101,7 +100,7 @@ namespace mcexInstaller
                 MessageBoxIcon icon = MessageBoxIcon.Error;
                 DialogResult result;
                 string message = "Installation error.\n" +
-                                 "Report it at-- > https://github.com/grpzz/.mcex/discussions";
+                                 "Report it at-- > https://github.com/grpzz/mccm/discussions";
                 string caption = "";
 
                 result = MessageBox.Show(message, caption, buttons, icon);

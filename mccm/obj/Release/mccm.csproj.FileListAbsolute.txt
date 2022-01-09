@@ -1,8 +1,8 @@
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mccm.csproj.AssemblyReference.cache
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mcex.ini.resources
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mcex.options.resources
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mccm.csproj.GenerateResource.cache
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mccm.csproj.CoreCompileInputs.cache
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\bin\mccm.exe
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mccm.Properties.Resources.resources
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mccm.exe
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mccm.ini.resources
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccm\obj\Release\mccm.options.resources

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C12E309B-F98A-42E3-AAE8-96CC0D4A2593}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>mcexInstaller</RootNamespace>
-    <AssemblyName>mcexInstaller</AssemblyName>
+    <RootNamespace>mccmInstaller</RootNamespace>
+    <AssemblyName>mccmInstaller</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,7 +51,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>mcexInstaller.Program</StartupObject>
+    <StartupObject>mccmInstaller.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -86,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">

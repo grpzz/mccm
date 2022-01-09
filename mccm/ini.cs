@@ -2,7 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 
-namespace mcex
+namespace mccm
 {
     public partial class ini : Form
     {
@@ -17,12 +17,12 @@ namespace mcex
             InitializeComponent();
 
             programpath = Path.Combine(Environment.GetFolderPath(
-             Environment.SpecialFolder.ApplicationData), @".mcex\");
+             Environment.SpecialFolder.ApplicationData), @".mccm\");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            mcexclass.itemsFile();
+            mccmclass.itemsFile();
             Application.Exit();
         }
 
@@ -108,8 +108,8 @@ namespace mcex
             {
                 Directory.CreateDirectory(tempPath);
             }
-            mcexclass.MoveFilesToMinecraft(tempPath);
-            mcexclass.itemsFile();
+            mccmclass.MoveFilesToMinecraft(tempPath);
+            mccmclass.itemsFile();
             MessageBox.Show("Completed");
             Application.Exit();
         }

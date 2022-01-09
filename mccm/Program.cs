@@ -1,9 +1,9 @@
-﻿using mcex;
+﻿using mccm;
 using System;
 using System.IO;
 using System.Windows.Forms;
 
-namespace minecraftExplorer
+namespace minecraftcontextmenu
 {
     static class Program
     {
@@ -56,12 +56,12 @@ namespace minecraftExplorer
 
             if (!bm)
             {
-                mcexclass.GetdirectoryFiles();
+                mccmclass.GetdirectoryFiles();
                 Application.Exit();
             }
             else
             {
-                mcexclass.GetdirectoryFiles();
+                mccmclass.GetdirectoryFiles();
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new ini());

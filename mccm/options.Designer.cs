@@ -1,5 +1,5 @@
 ﻿
-namespace mcex
+namespace mccm
 {
     partial class options
     {

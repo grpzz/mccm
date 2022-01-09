@@ -1,5 +1,5 @@
 ﻿
-namespace mcex
+namespace mccm
 {
     partial class ini
     {
@@ -135,6 +135,7 @@ namespace mcex
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Enabled = false;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label4.Location = new System.Drawing.Point(196, 71);
             this.label4.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
@@ -283,7 +284,7 @@ namespace mcex
             this.Name = "ini";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = ".mc explorer";
+            this.Text = ".mccm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

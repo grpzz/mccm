@@ -1,9 +1,0 @@
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\obj\Release\mcexInstaller.iniins.resources
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\obj\Release\mcexInstaller.Properties.Resources.resources
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\obj\Release\mcexInstaller.csproj.GenerateResource.cache
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\obj\Release\mcexInstaller.csproj.CoreCompileInputs.cache
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\obj\Release\mcexInstaller.exe
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\obj\Release\mcexInstaller.pdb
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\bin\mcexInstaller.exe.config
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\bin\mcexInstaller.exe
-C:\Users\Gianpz\Desktop\Projectos\Minecraft Explorer\mcexInstaller\bin\mcexInstaller.pdb

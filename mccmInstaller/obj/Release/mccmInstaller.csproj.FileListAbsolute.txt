@@ -1,10 +1,9 @@
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\bin\mcexInstaller.exe.config
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\bin\mcexInstaller.exe
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\bin\mcexInstaller.pdb
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.AssemblyReference.cache
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mcexInstaller.iniins.resources
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mcexInstaller.Properties.Resources.resources
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.iniins.resources
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.Properties.Resources.resources
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.GenerateResource.cache
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.CoreCompileInputs.cache
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mcexInstaller.exe
-C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mcexInstaller.pdb
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\bin\mccmInstaller.exe.config
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\bin\mccmInstaller.exe
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\bin\mccmInstaller.pdb
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.exe
+C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.pdb

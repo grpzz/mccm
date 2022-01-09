@@ -1,9 +1,9 @@
 # MCCM
 Minecraft context menu (Codename .mccm) makes it easy to add files like, mods, texture pack and shader pack, without going into the .minecraft folder
 
-##Installer
+## Installer
 
-To use MCCM it is necessary to run the installer, the installer will download the latest version of the MCCM executable from the github servers, it will also modify the Windows registry by adding HKEY_CLASSES_ROOT \ * \ shell \ mccm.
+To use MCCM it is necessary to run the installer, the installer will download the latest version of the MCCM executable from the github servers, it will also modify the Windows registry by adding 'HKEY_CLASSES_ROOT\*\shell\mccm.'
 
 The executable is located [Here](https://github.com/grpzz/mccm/tree/master/mccmInstaller/bin)
 

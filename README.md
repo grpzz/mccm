@@ -9,6 +9,10 @@ The executable is located [Here](https://github.com/grpzz/mccm/tree/master/mccmI
 
 ### [Download installer](https://raw.githubusercontent.com/grpzz/mccm/master/mccmInstaller/bin/mccmInstaller.exe)
 
+## How to use 
+
+Simply right-click on any file, then click on "add to minecraft", then a window will open where you will select its location where your .minecraft directory is located and the version of minecraft that you will use.
+
 ### Requirements
  - Windows 7
  - Windows 8.1

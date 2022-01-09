@@ -9,7 +9,7 @@ namespace mccm
         public static void itemsFile()
         {
             string itempath = Path.Combine(Environment.GetFolderPath(
-                Environment.SpecialFolder.ApplicationData), @".mcex\items");
+                Environment.SpecialFolder.ApplicationData), @".mccm\items");
 
             if (File.Exists(itempath))
             {
@@ -26,7 +26,7 @@ namespace mccm
         {
             string line;
             string itempath = Path.Combine(Environment.GetFolderPath(
-                Environment.SpecialFolder.ApplicationData), @".mcex\items");
+                Environment.SpecialFolder.ApplicationData), @".mccm\items");
 
             StreamReader file = new System.IO.StreamReader(itempath);
             while ((line = file.ReadLine()) != null)
@@ -47,7 +47,7 @@ namespace mccm
         public static void GetdirectoryFiles()
         {
             string itempath = Path.Combine(Environment.GetFolderPath(
-                Environment.SpecialFolder.ApplicationData), @".mcex\items");
+                Environment.SpecialFolder.ApplicationData), @".mccm\items");
 
             StreamWriter WriteReportFile = File.AppendText(itempath);
             WriteReportFile.WriteLine(Environment.GetCommandLineArgs()[2]);

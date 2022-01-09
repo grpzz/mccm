@@ -85,9 +85,9 @@ namespace mccmInstaller
             this.label1.Location = new System.Drawing.Point(20, 54);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(287, 19);
+            this.label1.Size = new System.Drawing.Size(290, 38);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Internet will be needed for the installation";
+            this.label1.Text = "Internet will be needed for the installation.\r\n";
             // 
             // label2
             // 
@@ -98,7 +98,7 @@ namespace mccmInstaller
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(328, 17);
             this.label2.TabIndex = 5;
-            this.label2.Text = ".mcex Installer";
+            this.label2.Text = ".mccm Installer";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
@@ -141,9 +141,9 @@ namespace mccmInstaller
             this.label5.Location = new System.Drawing.Point(20, 73);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(248, 19);
+            this.label5.Size = new System.Drawing.Size(251, 19);
             this.label5.TabIndex = 9;
-            this.label5.Text = "It will be added in the context menu";
+            this.label5.Text = "It will be added in the context menu.";
             // 
             // iniins
             // 

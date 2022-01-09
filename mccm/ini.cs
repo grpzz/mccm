@@ -110,7 +110,7 @@ namespace mccm
             }
             mccmclass.MoveFilesToMinecraft(tempPath);
             mccmclass.itemsFile();
-            MessageBox.Show("Completed");
+            //MessageBox.Show("Completed");
             Application.Exit();
         }
     }

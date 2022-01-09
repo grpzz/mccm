@@ -95,7 +95,7 @@ namespace mcex
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(91, 29);
             this.button7.TabIndex = 18;
-            this.button7.Text = "Auto";
+            this.button7.Text = "Default";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 

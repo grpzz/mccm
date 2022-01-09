@@ -37,7 +37,7 @@ namespace mcex
 
         private void SearchVersion()
         {
-            string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcex/version";
+            string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccm/version";
             string path = $"{mcexpath}lastversion";
             download1.DownloadFileAsync(new Uri(url), path);
         }
@@ -58,7 +58,7 @@ namespace mcex
 
         private void download()
         {
-            string url = "https://raw.githubusercontent.com/grpzz/.mcex/master/mcexInstaller/bin/mcexInstaller.exe";
+            string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccmInstaller/bin/mccmInstaller.exe";
             string path = $"{mcexpath}mcexInstaller.exe";
             download2.DownloadFileAsync(new Uri(url), path);
         }

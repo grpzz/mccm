@@ -1,5 +1,5 @@
 # MCCM
-Minecraft context menu (Codename .mccm) makes it easy to add files like, mods, texture pack and shader pack, without going into the .minecraft folder
+Minecraft context menu (Codename .mccm) makes it easy to add files like, mods, texture pack and shader pack, without going into the .minecraft folder.
 
 ## Installer
 

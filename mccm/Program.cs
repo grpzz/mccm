@@ -1,6 +1,5 @@
 ﻿using mccm;
 using System;
-using System.IO;
 using System.Windows.Forms;
 
 namespace minecraftcontextmenu
@@ -22,7 +21,7 @@ namespace minecraftcontextmenu
                         break;
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 options();
                 Console.WriteLine(e);

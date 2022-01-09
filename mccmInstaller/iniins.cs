@@ -1,9 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using Microsoft.Win32;
+using System;
+using System.ComponentModel;
 using System.IO;
 using System.Net;
-using System.ComponentModel;
-using Microsoft.Win32;
+using System.Windows.Forms;
 
 namespace mccmInstaller
 {
@@ -80,7 +80,7 @@ namespace mccmInstaller
         {
             try
             {
-               //Process.Start("\"" + mcexpath + "mcex.exe\" \"install\" \"%1\"");
+                //Process.Start("\"" + mcexpath + "mcex.exe\" \"install\" \"%1\"");
 
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Information;
@@ -94,7 +94,7 @@ namespace mccmInstaller
                     Application.Exit();
                 }
             }
-            catch 
+            catch
             {
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Error;

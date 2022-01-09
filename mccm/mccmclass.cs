@@ -28,7 +28,7 @@ namespace mccm
             string itempath = Path.Combine(Environment.GetFolderPath(
                 Environment.SpecialFolder.ApplicationData), @".mcex\items");
 
-            StreamReader file =new System.IO.StreamReader(itempath);
+            StreamReader file = new System.IO.StreamReader(itempath);
             while ((line = file.ReadLine()) != null)
             {
                 try
@@ -36,7 +36,7 @@ namespace mccm
                     FileInfo fi = new FileInfo(line);
                     System.IO.File.Move(line, path + @"\" + fi.Name);
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     MessageBox.Show(e.ToString());
                 }

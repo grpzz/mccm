@@ -14,7 +14,7 @@ namespace mccm
 
         string actuallyversion;
         string lastversion = "";
-        string mcexpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".mcex\");
+        string mccmpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @".mccm\");
 
         public options()
         {
@@ -38,13 +38,13 @@ namespace mccm
         private void SearchVersion()
         {
             string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccm/version";
-            string path = $"{mcexpath}lastversion";
+            string path = $"{mccmpath}lastversion";
             download1.DownloadFileAsync(new Uri(url), path);
         }
 
         private void Completed1(object sender, AsyncCompletedEventArgs e)
         {
-            Stream stream = File.OpenRead($"{mcexpath}lastversion");
+            Stream stream = File.OpenRead($"{mccmpath}lastversion");
             StreamReader streamReader = new StreamReader(stream);
             string str = streamReader.ReadToEnd();
 
@@ -59,17 +59,17 @@ namespace mccm
         private void download()
         {
             string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccmInstaller/bin/mccmInstaller.exe";
-            string path = $"{mcexpath}mcexInstaller.exe";
+            string path = $"{mccmpath}mccmInstaller.exe";
             download2.DownloadFileAsync(new Uri(url), path);
         }
 
         private void Completed2(object sender, AsyncCompletedEventArgs e)
         {
-            if (File.Exists($"{mcexpath}mcexInstaller.exe"))
+            if (File.Exists($"{mccmpath}mccmInstaller.exe"))
             {
                 try
                 {
-                    Process.Start($"{mcexpath}mcexInstaller.exe");
+                    Process.Start($"{mccmpath}mccmInstaller.exe");
                     Application.Exit();
                 }
                 catch (Win32Exception)

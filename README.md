@@ -14,14 +14,6 @@ The executable is located [here](https://github.com/grpzz/mccm/tree/master/mccmI
 Simply right-click on any file, then click on "add to minecraft", then a window will open where you will select its location where your .minecraft directory is located and the version of minecraft that you will use.
 
 ### Requirements
- - Windows 7
- - Windows 8.1
- - Windows 10
- - Windows 11 (here I compile it)
-
-If it doesn't work on older windows, please report
-
-### Pre-Requirements
 ```
 .NET Framework 4.7.2
 ```

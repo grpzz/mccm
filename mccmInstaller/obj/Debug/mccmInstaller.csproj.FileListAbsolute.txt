@@ -1,0 +1,13 @@
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\Debug\mccmInstaller.exe.config
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\Debug\mccmInstaller.exe
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\Debug\mccmInstaller.pdb
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\Debug\System.Windows.Forms.dll
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.csproj.AssemblyReference.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.csproj.SuggestedBindingRedirects.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.iniins.resources
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.Properties.Resources.resources
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.csproj.GenerateResource.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.csproj.CoreCompileInputs.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.csproj.CopyComplete
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.exe
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Debug\mccmInstaller.pdb

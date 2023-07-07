@@ -12,31 +12,45 @@ namespace mccm
         string type;
         string versionmc;
 
+        string[] mcversion;
+
         public ini()
         {
             InitializeComponent();
 
+            string[] dirs = Directory.GetDirectories(@"C:\Users\gianc\AppData\Roaming\.minecraft\versions", "1.??.??");
+            foreach (string dir in dirs)
+            {
+                var dirn = new DirectoryInfo(dir).Name;
+                comboBox2.Items.Add(dirn);
+            }
+
             programpath = Path.Combine(Environment.GetFolderPath(
-             Environment.SpecialFolder.ApplicationData), @".mccm\");
+                Environment.SpecialFolder.ApplicationData), @".mccm\");
+
+            textBox1.Text = Path.Combine(Environment.GetFolderPath(
+                Environment.SpecialFolder.ApplicationData), @".minecraft");
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e) //Exit button
         {
-            mccmclass.itemsFile();
-            Application.Exit();
+            mccmclass.itemsFile(); //Clear ITEMSFILE
+            Application.Exit(); //exit program
         }
 
+        //Search MINECRAFT PATH
         private void button1_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fb = new FolderBrowserDialog();
             DialogResult result = fb.ShowDialog();
-            if (result == DialogResult.OK)
+            if (result == DialogResult.OK)                    
             {
                 textBox1.Text = fb.SelectedPath;
                 Environment.SpecialFolder root = fb.RootFolder;
             }
         }
 
+        //Default MINECRAFT PATH
         private void button7_Click(object sender, EventArgs e)
         {
             textBox1.Text = Path.Combine(Environment.GetFolderPath(
@@ -48,6 +62,7 @@ namespace mccm
             mcpath = textBox1.Text;
         }
 
+        //Type Minecraft files
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
             switch (comboBox1.Text)
@@ -67,12 +82,13 @@ namespace mccm
             reTempPath();
         }
 
+        //RELOAD FILE TYPE
         public void reTempPath()
         {
             if (comboBox1.Text == "Mod")
             {
                 comboBox2.Enabled = true;
-                if (comboBox2.Text == "n/a")
+                if (comboBox2.Text == "null")
                 {
                     versionmc = "";
                 }
@@ -88,7 +104,6 @@ namespace mccm
             }
 
             tempPath = $"{mcpath}{type}{versionmc}";
-
             toolStripStatusLabel1.Text = tempPath;
         }
 
@@ -99,7 +114,7 @@ namespace mccm
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ready();
+            ready(); //Finally
         }
 
         private void ready()
@@ -112,6 +127,21 @@ namespace mccm
             mccmclass.itemsFile();
             //MessageBox.Show("Completed");
             Application.Exit();
+        }
+
+        private void ini_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ini_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

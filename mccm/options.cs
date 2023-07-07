@@ -55,7 +55,6 @@ namespace mccm
 
             label3.Text = lastversion;
         }
-
         private void download()
         {
             string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccmInstaller/bin/mccmInstaller.exe";
@@ -74,11 +73,11 @@ namespace mccm
                 }
                 catch (Win32Exception)
                 {
-                    MessageBox.Show("Application start error");
+                    MessageBox.Show("application starting error");
                 }
                 catch
                 {
-                    MessageBox.Show("Error");
+                    MessageBox.Show("error");
                 }
             }
             else

@@ -42,14 +42,16 @@ namespace mccmInstaller
         {
             const string userRoot = "HKEY_CLASSES_ROOT";
 
-            const string subkey0 = "*\\shell\\mccm";
-            const string subkey1 = "*\\shell\\mccm\\command";
-            const string keyName0 = userRoot + "\\" + subkey0;
-            const string keyName1 = userRoot + "\\" + subkey1;
+            const string subkey0 = @"*\shell\mccm";
+            const string keyName0 = userRoot + @"\" + subkey0;
+
+            const string subkey1 = @"*\shell\mccm\command";
+            const string keyName1 = userRoot + @"\" + subkey1;
 
             try
             {
                 Registry.SetValue(keyName0, "", "Add to Minecraft");
+                Registry.SetValue(keyName0, "AppliesTo", "System.FileName:\"*.jar\" OR System.FileName:\"*.zip\"");
                 Registry.SetValue(keyName1, "", "\"" + mccmpath + "mccm.exe\" \"additem\" \"%1\"");
             }
             catch (Exception e)

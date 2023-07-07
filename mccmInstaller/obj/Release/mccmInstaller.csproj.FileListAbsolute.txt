@@ -7,3 +7,16 @@ C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\bin\mccmInstaller.exe
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\bin\mccmInstaller.pdb
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.exe
 C:\Users\Gianpz\Desktop\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.pdb
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\mccmInstaller.exe.config
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\mccmInstaller.exe
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\mccmInstaller.pdb
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.AssemblyReference.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.SuggestedBindingRedirects.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.iniins.resources
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.Properties.Resources.resources
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.GenerateResource.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.CoreCompileInputs.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.exe
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.pdb
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\System.Windows.Forms.dll
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.CopyComplete

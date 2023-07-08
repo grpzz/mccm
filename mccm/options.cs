@@ -37,7 +37,7 @@ namespace mccm
 
         private void SearchVersion()
         {
-            string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccm/version";
+            string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccm/bin/lastversion/lastversion";
             string path = $"{mccmpath}lastversion";
             download1.DownloadFileAsync(new Uri(url), path);
         }

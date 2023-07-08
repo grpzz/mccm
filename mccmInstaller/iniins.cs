@@ -3,6 +3,7 @@ using System;
 using System.ComponentModel;
 using System.IO;
 using System.Net;
+using System.Security.Policy;
 using System.Windows.Forms;
 
 namespace mccmInstaller
@@ -59,7 +60,7 @@ namespace mccmInstaller
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Information;
                 DialogResult result;
-                string message = "Error creating key in" + userRoot + "\n" +
+                string message = "Error creating key" + userRoot + "\n" +
                                  "Exception" + e;
                 string caption = "";
 
@@ -73,7 +74,7 @@ namespace mccmInstaller
 
         private void Download()
         {
-            string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccm/bin/mccm.exe";
+            string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccm/bin/lastversion/mccm.exe";
             string path = mccmpath + "mccm.exe";
             download1.DownloadFileAsync(new Uri(url), path);
         }
@@ -82,13 +83,10 @@ namespace mccmInstaller
         {
             try
             {
-                //Process.Start("\"" + mcexpath + "mcex.exe\" \"install\" \"%1\"");
-
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Information;
                 DialogResult result;
-                string message = "Installation finished.\n" +
-                                 "If you find a bug, report it at-- > https://github.com/grpzz/mccm/discussions";
+                string message = "Installation finished.";
                 string caption = "";
                 result = MessageBox.Show(message, caption, buttons, icon);
                 if (result == System.Windows.Forms.DialogResult.OK)
@@ -102,7 +100,7 @@ namespace mccmInstaller
                 MessageBoxIcon icon = MessageBoxIcon.Error;
                 DialogResult result;
                 string message = "Installation error.\n" +
-                                 "Report it at-- > https://github.com/grpzz/mccm/discussions";
+                                 "https://github.com/grpzz/mccm/issues";
                 string caption = "";
 
                 result = MessageBox.Show(message, caption, buttons, icon);
@@ -116,6 +114,11 @@ namespace mccmInstaller
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/grpzz/mccm");
         }
     }
 }

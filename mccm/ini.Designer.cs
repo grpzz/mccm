@@ -34,9 +34,6 @@ namespace mccm
             "eded"}, -1);
             this.listView1 = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -67,9 +64,6 @@ namespace mccm
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -83,35 +77,6 @@ namespace mccm
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(436, 179);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(217, 141);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 22);
-            this.textBox2.TabIndex = 23;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label4.Location = new System.Drawing.Point(218, 122);
-            this.label4.Margin = new System.Windows.Forms.Padding(20, 15, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 16);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Add version";
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(312, 138);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(47, 29);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // comboBox2
             // 
@@ -120,11 +85,12 @@ namespace mccm
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "null"});
-            this.comboBox2.Location = new System.Drawing.Point(217, 91);
+            this.comboBox2.Location = new System.Drawing.Point(209, 91);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(142, 24);
+            this.comboBox2.Size = new System.Drawing.Size(117, 24);
             this.comboBox2.TabIndex = 19;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // button5
             // 
@@ -152,7 +118,7 @@ namespace mccm
             // 
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label3.Location = new System.Drawing.Point(218, 71);
+            this.label3.Location = new System.Drawing.Point(212, 71);
             this.label3.Margin = new System.Windows.Forms.Padding(20, 15, 3, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 16);
@@ -177,9 +143,9 @@ namespace mccm
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Mod",
+            "Plugin",
             "Resource packs",
-            "Shader",
-            "Plugin"});
+            "Shader"});
             this.comboBox1.Location = new System.Drawing.Point(20, 91);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.comboBox1.Name = "comboBox1";
@@ -222,7 +188,7 @@ namespace mccm
             // 
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 18);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 16);
             // 
             // statusStrip1
             // 
@@ -250,7 +216,6 @@ namespace mccm
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".mccm";
-            this.Load += new System.EventHandler(this.ini_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -274,9 +239,6 @@ namespace mccm
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

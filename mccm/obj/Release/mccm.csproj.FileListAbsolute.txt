@@ -15,3 +15,4 @@ C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Release\mccm.csproj.GenerateRe
 C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Release\mccm.csproj.CoreCompileInputs.cache
 C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Release\mccm.exe
 C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\bin\mccm.exe
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\bin\lastversion\mccm.exe

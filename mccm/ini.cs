@@ -13,7 +13,6 @@ namespace mccm
         string versionmc;
 
         string[] mcversion;
-
         public ini()
         {
             InitializeComponent();
@@ -107,14 +106,14 @@ namespace mccm
             toolStripStatusLabel1.Text = tempPath;
         }
 
-        private void comboBox2_TextChanged(object sender, EventArgs e)
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             reTempPath();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ready(); //Finally
+            ready();
         }
 
         private void ready()
@@ -125,23 +124,7 @@ namespace mccm
             }
             mccmclass.MoveFilesToMinecraft(tempPath);
             mccmclass.itemsFile();
-            //MessageBox.Show("Completed");
             Application.Exit();
-        }
-
-        private void ini_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ini_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

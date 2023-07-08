@@ -51,13 +51,12 @@ namespace mccm
             lastversion = str;
             streamReader.Close();
             stream.Close();
-            //Directory.Delete($"{mcexpath}lastversion");
 
             label3.Text = lastversion;
         }
         private void download()
         {
-            string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccmInstaller/bin/mccmInstaller.exe";
+            string url = "https://raw.githubusercontent.com/grpzz/mccm/master/mccmInstaller/bin/lastversion/mccmInstaller.exe";
             string path = $"{mccmpath}mccmInstaller.exe";
             download2.DownloadFileAsync(new Uri(url), path);
         }

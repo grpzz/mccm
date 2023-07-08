@@ -20,3 +20,7 @@ C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller
 C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.pdb
 C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\System.Windows.Forms.dll
 C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\obj\Release\mccmInstaller.csproj.CopyComplete
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\lastversion\mccmInstaller.exe.config
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\lastversion\mccmInstaller.exe
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\lastversion\mccmInstaller.pdb
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccmInstaller\bin\lastversion\System.Windows.Forms.dll

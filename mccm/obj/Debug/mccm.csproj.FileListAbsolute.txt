@@ -1,0 +1,9 @@
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\bin\Debug\mccm.exe
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Debug\mccm.csproj.AssemblyReference.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Debug\mccm.csproj.SuggestedBindingRedirects.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Debug\mccm.ini.resources
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Debug\mccm.options.resources
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Debug\mccm.Properties.Resources.resources
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Debug\mccm.csproj.GenerateResource.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Debug\mccm.csproj.CoreCompileInputs.cache
+C:\Users\gianc\Escritorio\Proyectos\mccm\mccm\obj\Debug\mccm.exe

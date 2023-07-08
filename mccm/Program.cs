@@ -23,8 +23,9 @@ namespace minecraftcontextmenu
             }
             catch (Exception e)
             {
+
+                MessageBox.Show(e.ToString());
                 options();
-                Console.WriteLine(e);
             }
         }
 
@@ -65,7 +66,6 @@ namespace minecraftcontextmenu
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new ini());
             }
-            m.ReleaseMutex();
         }
     }
 }
